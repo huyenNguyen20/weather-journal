@@ -47,6 +47,7 @@ https://openweathermap.org/
 
 ## Deployment
 
+Link to the webpage: https://h-weather-journal.herokuapp.com/
 
 ## Built With
 
