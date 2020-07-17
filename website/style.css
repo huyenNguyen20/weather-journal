@@ -1,0 +1,334 @@
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.6) ), url(./img/hero_back.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.app{
+    max-width: 80%;
+    height: fit-content;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/**************APP HEADLINE*************/
+.app__headline{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+/**************APP INPUT*************/
+.app__input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.app__input >*{
+    margin: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.app__input--zip{
+    width: 8%;
+    padding: 2px;
+}
+.app__input--feelings{
+    width: 30%;
+}
+.app__input--btn{
+   display: inline-block;
+   height: 33px;
+   background-color: #f08a5d;
+   color: #fff;
+   transition: background-color 0.2s;
+}
+
+.app__input--btn:hover{
+   background-color: #f55d1c;
+}
+
+/**************APP ENTRY*************/
+.app__entry{
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*APP Entry Titles*/
+h2{
+    background-color:#f08a5d;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.entry__history--title{
+    border-top-left-radius: 5px;
+}
+
+.holder--title{
+    border-top-right-radius: 5px;
+    border-left: 1px solid #fff;
+}
+
+/*APP Entry History*/
+.app__entry__history{
+    width: 30%;
+    border-right: 1px solid #fff;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.entry__history--item{
+    list-style: none;
+    border-bottom: 2px solid #fff;
+    padding: 10px 0;
+    background-color: #fce4d9;
+    transition: background-color 0.2s;
+}
+
+.entry__history--item:hover{
+    background-color: #f8c2aa;
+}
+
+.item--details,
+.item--title{
+    display: flex;
+    flex-direction: row;
+}
+
+.active{
+    background-color: #f8c2aa;
+}
+
+.item--title{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.item--title h3{
+    font-size: 0.9rem;
+    font-weight: 600; 
+    margin-top: 0;
+}
+
+.item--title p{
+    font-size: 0.6rem;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.item-img{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.item--content--summary{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+}
+
+.item-max-temp,
+.item-min-temp,
+.item-cloudiness{
+    padding: 4px;
+    margin: 2px;
+    border-radius: 6px;
+}  
+
+.item-max-temp{
+    background-color: #ff2f51;
+}
+
+.item-min-temp{
+    background-color: #1469e5;
+    color: #fff;
+}
+
+.item-cloudiness{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.item-windspeed,
+.item-cloudPer{
+    font-size: 0.8rem;
+}
+
+/*App Entry Holder*/
+.app__entry__holder{
+    width: 70%;
+}
+
+.holder--body{
+    padding: 5%;
+    display: none;
+}
+
+.holder--place{
+    font-size: 2rem;
+    color: #f08a5d;
+}
+
+.holder__head{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.holder--img{
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.holder--temp{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.holder__details{
+    font-weight: 600;
+}
+
+.holder__details:before{
+    display: block;
+    content:"";
+    height: 2px;
+    width: 200px;
+    background-color: rgba(240, 138, 93, 0.6);
+    margin-bottom: 10px;
+}
+
+.holder__details span{
+    font-weight: 300;
+}
+
+.icon-small{
+    color: #f08a5d;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+
+
+
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #555; 
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+/*Media Query*/
+@media (max-width: 1024px){
+    .app{
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    .app__entry__history{
+        width: 40%;
+    }
+
+    .app__entry__holder{
+        width: 60%;
+    }
+}
+
+@media (max-width: 584px){
+    .app{
+        width: 100%;
+        padding: 2px;
+    }
+    .app__input >*{
+        margin-left: 0;
+    }
+    .app__entry{
+        flex-direction: column-reverse;
+    }
+
+    .app__entry__history,
+    .app__entry__holder{
+        width: 100%;
+        border: none;
+    }
+
+    .holder--title{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-left: none;
+    }
+
+    .entry__history--title{
+        border-top-left-radius: 0;
+    }
+
+    .app__input{
+        flex-direction: column;
+    }
+
+    .app__input--zip,
+    .app__input--feelings{
+        width: 100%;
+    }
+
+    .app__input--btn{
+        width: 101%;
+    }
+
+    .holder--place{
+        font-size: 1.5rem;
+    }
+
+}
+
