@@ -1,7 +1,5 @@
 
-# Project name
-
-Weather Journal For Cities in US
+# Weather Journal For Cities in US
 
 It is the third project for Udacity Front-end Nanodegree. 
 
